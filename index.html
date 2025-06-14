@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Samira Fth – Stylist & Art Director</title>
+  <title>Samira Fathi</title>
   <style>
     body {
       font-family: 'Helvetica Neue', sans-serif;
@@ -28,6 +28,10 @@
       text-decoration: none;
       color: #000;
       font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ff3366;
     }
     section {
       max-width: 800px;
@@ -41,6 +45,11 @@
       width: 100%;
       max-width: 600px;
       margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .portfolio div {
+      margin-bottom: 2rem;
     }
     footer {
       background: #f4f4f4;
@@ -48,12 +57,21 @@
       padding: 1rem;
       font-size: 0.9rem;
     }
+    @media (max-width: 600px) {
+      body {
+        font-size: 16px;
+      }
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Samira Fathi</h1>
-    <p>Stylist & Art Director</p>
+    <p><em>Stylist & Image Consultant based in Milan</em></p>
   </header>
 
   <nav>
@@ -64,15 +82,24 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Turning from Architecture to Fashion, I've immersed myself in this universe in search of where I truly belong, and now I'm chasing the wonders of styling. </p>
+    <p>Turning from Architecture to Fashion, I've immersed myself in this universe in search of where I truly belong, and now I'm chasing the wonders of styling.</p>
   </section>
 
   <section id="portfolio">
     <h2>Portfolio</h2>
     <div class="portfolio">
-      <img src="DSC00256 " alt="Project 1" />
-      <img src="your-image2.jpg" alt="Project 2" />
-      <img src="your-image3.jpg" alt="Project 3" />
+      <div>
+        <img src="DSC00256.jpg" alt="Gothic Romance – Editorial 2024" />
+        <p><strong>Gothic Romance</strong> – Editorial, 2024</p>
+      </div>
+      <div>
+        <img src="your-image2.jpg" alt="Project 2" />
+        <p><strong>Title of Project 2</strong> – Short description</p>
+      </div>
+      <div>
+        <img src="your-image3.jpg" alt="Project 3" />
+        <p><strong>Title of Project 3</strong> – Short description</p>
+      </div>
     </div>
   </section>
 
@@ -80,6 +107,14 @@
     <h2>Contact</h2>
     <p>Email: <a href="mailto:sam.fth11@gmail.com">sam.fth11@gmail.com</a></p>
     <p>Instagram: <a href="https://instagram.com/samirafth_" target="_blank">@samirafth_</a></p>
+
+    <form action="mailto:sam.fth11@gmail.com" method="POST" enctype="text/plain">
+      <label>Your Name:</label><br />
+      <input type="text" name="name" /><br />
+      <label>Your Message:</label><br />
+      <textarea name="message"></textarea><br />
+      <input type="submit" value="Send" />
+    </form>
   </section>
 
   <footer>
