@@ -13,16 +13,19 @@
       color: #333;
       line-height: 1.6;
     }
+
     header {
-      background-color: #000;
+      background: url('IMAGE1.jpg') center/cover no-repeat;
       color: white;
-      padding: 2rem;
+      padding: 6rem 2rem;
       text-align: center;
     }
+
     nav {
       text-align: center;
       margin: 1rem 0;
     }
+
     nav a {
       margin: 0 1rem;
       text-decoration: none;
@@ -30,17 +33,21 @@
       font-weight: bold;
       transition: color 0.3s ease;
     }
+
     nav a:hover {
       color: #ff3366;
     }
+
     section {
       max-width: 800px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
-    h1, h2 {
+
+    h1, h2, h3 {
       font-weight: normal;
     }
+
     .portfolio img {
       width: 100%;
       max-width: 600px;
@@ -48,19 +55,23 @@
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
+
     .portfolio div {
       margin-bottom: 2rem;
     }
+
     footer {
       background: #f4f4f4;
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
     }
+
     @media (max-width: 600px) {
       body {
         font-size: 16px;
       }
+
       nav a {
         display: block;
         margin: 0.5rem 0;
@@ -87,18 +98,28 @@
 
   <section id="portfolio">
     <h2>Portfolio</h2>
+
+    <h3>Styling</h3>
     <div class="portfolio">
       <div>
         <img src="DSC00256.jpg" alt="Gothic Romance – Editorial 2024" />
         <p><strong>Gothic Romance</strong> – Editorial, 2024</p>
       </div>
       <div>
-        <img src="your-image2.jpg" alt="Project 2" />
-        <p><strong>Title of Project 2</strong> – Short description</p>
+        <img src="your-styling-image2.jpg" alt="Styling Project 2" />
+        <p><strong>Title of Styling Project 2</strong> – Short description</p>
+      </div>
+    </div>
+
+    <h3>Architecture</h3>
+    <div class="portfolio">
+      <div>
+        <img src="your-architecture-image1.jpg" alt="Architecture Project 1" />
+        <p><strong>Title of Architecture Project 1</strong> – Short description</p>
       </div>
       <div>
-        <img src="your-image3.jpg" alt="Project 3" />
-        <p><strong>Title of Project 3</strong> – Short description</p>
+        <img src="your-architecture-image2.jpg" alt="Architecture Project 2" />
+        <p><strong>Title of Architecture Project 2</strong> – Short description</p>
       </div>
     </div>
   </section>
