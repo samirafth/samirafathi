@@ -1,159 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Samira Fatahi - Portfolio</title>
+  <title>Samira Fathi</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
+      font-family: 'Helvetica Neue', sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
     }
 
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    h1 {
+    header {
+      background: url('IMAGE1.jpg') center/cover no-repeat;
+      color: white;
+      padding: 6rem 2rem;
       text-align: center;
-      margin-bottom: 40px;
     }
 
-    .project {
-      margin-bottom: 60px;
+    nav {
+      text-align: center;
+      margin: 1rem 0;
     }
 
-    .project-title {
-      font-size: 24px;
-      margin-bottom: 10px;
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff3366;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h1, h2, h3 {
+      font-weight: normal;
+    }
+
+    .portfolio img {
+      width: 100%;
+      max-width: 600px;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
     .thumbnail {
       width: 200px;
-      height: auto;
       cursor: pointer;
-      border: 1px solid #ccc;
-      padding: 5px;
-      background-color: #fff;
+      transition: transform 0.3s ease;
+    }
+
+    .thumbnail:hover {
+      transform: scale(1.05);
     }
 
     .lightbox {
       display: none;
       position: fixed;
-      top: 0;
+      z-index: 999;
+      padding-top: 60px;
       left: 0;
+      top: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.8);
-      z-index: 1000;
-      overflow-y: auto;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.9);
     }
 
     .lightbox-content {
-      position: relative;
-      margin: 5% auto;
-      width: 90%;
-      max-width: 800px;
-      background-color: #fff;
-      padding: 20px;
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
     }
 
     .lightbox-close {
       position: absolute;
-      top: 10px;
-      right: 20px;
-      font-size: 24px;
+      top: 30px;
+      right: 40px;
+      color: #fff;
+      font-size: 40px;
       font-weight: bold;
-      color: #000;
       text-decoration: none;
     }
 
-    .lightbox img {
+    .lightbox-gallery {
+      text-align: center;
+      margin-top: 1rem;
+      color: #fff;
+    }
+
+    .lightbox-gallery img {
       width: 100%;
-      height: auto;
-      margin-bottom: 10px;
+      max-width: 500px;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background: #f4f4f4;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 16px;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
     }
   </style>
 </head>
-
 <body>
-  <div class="container">
-    <h1>Samira Fatahi - Portfolio</h1>
+  <header>
+    <h1>Samira Fathi</h1>
+    <p><em>Stylist & Image Consultant based in Milan</em></p>
+  </header>
 
-    <div class="project">
-      <div class="project-title">Rebirth</div>
-      <a href="#rebirth-gallery"><img src="images/rebirthT.jpg" alt="Rebirth Thumbnail" class="thumbnail" /></a>
-      <div class="lightbox" id="rebirth-gallery">
-        <div class="lightbox-content">
-          <a href="#" class="lightbox-close">&times;</a>
-          <p><strong>Rebirth</strong> explores the metamorphosis of identity through textile manipulation and symbolic imagery.</p>
-          <img src="images/rebirth9.jpg" alt="Rebirth 1" />
-          <img src="images/rebirth2.jpg" alt="Rebirth 2" />
-          <img src="images/rebirth3.jpg" alt="Rebirth 3" />
-          <img src="images/rebirth4.jpg" alt="Rebirth 4" />
-          <img src="images/rebirth5.jpg" alt="Rebirth 5" />
-          <img src="images/rebirth6.jpg" alt="Rebirth 6" />
-          <img src="images/rebirth7.jpg" alt="Rebirth 7" />
-          <img src="images/rebirth8.jpg" alt="Rebirth 8" />
-        </div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I transitioned from Architecture to Fashion, immersing myself in the world of styling in search of my true calling. Today, I channel this journey into creating visual stories that reflect transformation, identity, and emotion.</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+
+    <h3>Styling</h3>
+
+    <!-- Rebirth -->
+    <h4>Rebirth</h4>
+    <div class="portfolio">
+      <a href="#rebirth-gallery">
+        <img src="rebirthT.jpg" alt="Rebirth Project" class="thumbnail" />
+      </a>
+    </div>
+
+    <div id="rebirth-gallery" class="lightbox">
+      <a href="#" class="lightbox-close">&times;</a>
+      <div class="lightbox-gallery">
+        <p><strong>Rebirth</strong> is a visual narrative inspired by transformation. Influenced by Comme des Garçons' "Body Meets Dress, Dress Meets Body" and Aloïse Design’s conceptual pieces, I proposed a collaborative shoot built around the myth of the goddess Inanna and her descent into the underworld—a metaphor for death, rebirth, and renewal. Shot in an Italian cemetery, the setting underscores the story’s symbolism, contrasting with the imagery from my own cultural background. It became a journey of shedding, surrendering, and becoming anew.</p>
+        <img src="rebirth2.jpg" alt="Rebirth Image 1" />
+        <img src="rebirth3.jpg" alt="Rebirth Image 2" />
+        <img src="rebirth4.jpg" alt="Rebirth Image 3" />
+        <img src="rebirth5.jpg" alt="Rebirth Image 4" />
+        <img src="rebirth6.jpg" alt="Rebirth Image 5" />
+        <img src="rebirth7.jpg" alt="Rebirth Image 6" />
+        <img src="rebirth8.jpg" alt="Rebirth Image 7" />
+        <img src="rebirth9.jpg" alt="Rebirth Image 8" />
       </div>
     </div>
 
-    <div class="project">
-      <div class="project-title">Cocoon</div>
-      <a href="#cocoon-gallery"><img src="images/cocoonT.jpg" alt="Cocoon Thumbnail" class="thumbnail" /></a>
-      <div class="lightbox" id="cocoon-gallery">
-        <div class="lightbox-content">
-          <a href="#" class="lightbox-close">&times;</a>
-          <p><strong>Cocoon</strong> reflects themes of protection and personal transformation, expressed through soft structures and muted tones.</p>
-          <img src="images/cocoon1.jpg" alt="Cocoon 1" />
-          <img src="images/cocoon2.jpg" alt="Cocoon 2" />
-          <img src="images/cocoon3.jpg" alt="Cocoon 3" />
-          <img src="images/cocoon4.jpg" alt="Cocoon 4" />
-        </div>
+    <!-- Cocoon -->
+    <h4>Cocoon</h4>
+    <div class="portfolio">
+      <a href="#cocoon-gallery">
+        <img src="cocoonT.jpg" alt="Cocoon Project" class="thumbnail" />
+      </a>
+    </div>
+
+    <div id="cocoon-gallery" class="lightbox">
+      <a href="#" class="lightbox-close">&times;</a>
+      <div class="lightbox-gallery">
+        <p><strong>Cocoon</strong> portrays the quiet, internal struggle of self-growth. It’s a personal exploration of stagnation, stillness, and the courage to move forward when hope is scarce. The project reflects those moments of solitude and surrender, but also the slow, delicate act of healing—of wrapping yourself in stillness before emerging renewed. It’s an ode to the unseen effort behind becoming.</p>
+        <img src="cocoon1.jpg" alt="Cocoon Image 1" />
+        <img src="cocoon2.jpg" alt="Cocoon Image 2" />
+        <img src="cocoon3.jpg" alt="Cocoon Image 3" />
+        <img src="cocoon4.jpg" alt="Cocoon Image 4" />
+        <img src="cocoon5.jpg" alt="Cocoon Image 5" />
+        <img src="cocoon6.jpg" alt="Cocoon Image 6" />
       </div>
     </div>
 
-    <div class="project">
-      <div class="project-title">Architecture</div>
-      <a href="#architecture-gallery"><img src="images/architectureT.jpg" alt="Architecture Thumbnail" class="thumbnail" /></a>
-      <div class="lightbox" id="architecture-gallery">
-        <div class="lightbox-content">
-          <a href="#" class="lightbox-close">&times;</a>
-          <p><strong>Architecture</strong> projects from Samira’s academic background, highlighting her design thinking and spatial experimentation.</p>
-          <img src="images/architecture1.jpg" alt="Architecture 1" />
-          <img src="images/architecture2.jpg" alt="Architecture 2" />
-          <img src="images/architecture3.jpg" alt="Architecture 3" />
-        </div>
+    <!-- Architecture -->
+    <h3>Architecture</h3>
+    <div class="portfolio">
+      <a href="#architecture-gallery">
+        <img src="architectureT.jpg" alt="Architecture Project" class="thumbnail" />
+      </a>
+    </div>
+
+    <div id="architecture-gallery" class="lightbox">
+      <a href="#" class="lightbox-close">&times;</a>
+      <div class="lightbox-gallery">
+        <p><strong>Architecture</strong> formed the foundation of my creative practice. It taught me how to think spatially, construct narratives, and approach every project with structure and intention. My architectural background informs my work as a stylist—blending precision, storytelling, and emotional resonance.</p>
+        <img src="architecture1.jpg" alt="Architecture Image 1" />
+        <img src="architecture2.jpg" alt="Architecture Image 2" />
+        <img src="architecture3.jpg" alt="Architecture Image 3" />
+        <img src="architecture4.jpg" alt="Architecture Image 4" />
+        <img src="architecture5.jpg" alt="Architecture Image 5" />
+        <img src="architecture6.jpg" alt="Architecture Image 6" />
       </div>
     </div>
 
-  </div>
+    <!-- Showroom Experience -->
+    <h3>Fashion Showroom</h3>
+    <div class="portfolio">
+      <a href="#showroom-gallery">
+        <img src="showroomT.jpg" alt="Showroom Experience" class="thumbnail" />
+      </a>
+    </div>
 
-  <script>
-    // Show lightbox
-    document.querySelectorAll('.thumbnail').forEach(thumbnail => {
-      thumbnail.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.parentElement.getAttribute('href');
-        document.querySelector(targetId).style.display = 'block';
-      });
-    });
+    <div id="showroom-gallery" class="lightbox">
+      <a href="#" class="lightbox-close">&times;</a>
+      <div class="lightbox-gallery">
+        <p><strong>Showroom Experience</strong> gave me a hands-on understanding of fashion presentation and client relations. Supporting the setup and styling of showroom looks, I sharpened my eye for detail, organization, and how styling intersects with sales strategy and brand identity. It was an immersive behind-the-scenes experience that added depth to my styling approach.</p>
+        <img src="showroom1.jpg" alt="Showroom Image 1" />
+        <img src="showroom2.jpg" alt="Showroom Image 2" />
+        <img src="showroom3.jpg" alt="Showroom Image 3" />
+      </div>
+    </div>
 
-    // Close lightbox
-    document.querySelectorAll('.lightbox-close').forEach(closeBtn => {
-      closeBtn.addEventListener('click', function (e) {
-        e.preventDefault();
-        this.parentElement.parentElement.style.display = 'none';
-      });
-    });
-  </script>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:sam.fth11@gmail.com">sam.fth11@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/samirafth_" target="_blank">@samirafth_</a></p>
+
+    <form action="mailto:sam.fth11@gmail.com" method="POST" enctype="text/plain">
+      <label>Your Name:</label><br />
+      <input type="text" name="name" /><br />
+      <label>Your Message:</label><br />
+      <textarea name="message"></textarea><br />
+      <input type="submit" value="Send" />
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Samira Fth. All rights reserved.</p>
+  </footer>
 </body>
-
 </html>
