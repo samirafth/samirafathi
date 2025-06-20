@@ -3,6 +3,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Samira Fathi</title>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: 'Helvetica Neue', sans-serif;
       margin: 0;
@@ -13,10 +17,25 @@
     }
 
     header {
+      position: relative;
       background: url('IMAGE1.jpg') center/cover no-repeat;
       color: white;
       padding: 6rem 2rem;
       text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+
+    header h1,
+    header p {
+      position: relative;
+      z-index: 1;
     }
 
     nav {
@@ -44,6 +63,15 @@
 
     h1, h2, h3 {
       font-weight: normal;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
     }
 
     .portfolio img {
@@ -98,36 +126,36 @@
     <h4>Rebirth</h4>
     <p><strong>Rebirth</strong> Inspired by the myth of INANNA, this project reflects a journey of death, transformation, and renewal, symbolically staged in a cemetery.</p>
     <div class="portfolio">
-      <img src="rebirth2.jpg" alt="Rebirth Image 1" />
-      <img src="rebirth3.jpg" alt="Rebirth Image 2" />
-      <img src="rebirth4.jpg" alt="Rebirth Image 3" />
-      <img src="rebirth5.jpg" alt="Rebirth Image 4" />
-      <img src="rebirth6.jpg" alt="Rebirth Image 5" />
-      <img src="rebirth7.jpg" alt="Rebirth Image 6" />
-      <img src="rebirth8.jpg" alt="Rebirth Image 7" />
-      <img src="rebirth9.jpg" alt="Rebirth Image 8" />
+      <img src="rebirth2.jpg" alt="Styling project Rebirth 1" />
+      <img src="rebirth3.jpg" alt="Styling project Rebirth 2" />
+      <img src="rebirth4.jpg" alt="Styling project Rebirth 3" />
+      <img src="rebirth5.jpg" alt="Styling project Rebirth 4" />
+      <img src="rebirth6.jpg" alt="Styling project Rebirth 5" />
+      <img src="rebirth7.jpg" alt="Styling project Rebirth 6" />
+      <img src="rebirth8.jpg" alt="Styling project Rebirth 7" />
+      <img src="rebirth9.jpg" alt="Styling project Rebirth 8" />
     </div>
 
     <h4>Cocoon</h4>
     <p><strong>Cocoon</strong> A visual metaphor for inner growth and emotional resilience, illustrating the silent struggles and eventual transformation we all go through.</p>
     <div class="portfolio">
-      <img src="cocoon1.jpg" alt="Cocoon Image 1" />
-      <img src="cocoon2.jpg" alt="Cocoon Image 2" />
-      <img src="cocoon3.jpg" alt="Cocoon Image 3" />
-      <img src="cocoon4.jpg" alt="Cocoon Image 4" />
-      <img src="cocoon5.jpg" alt="Cocoon Image 5" />
-      <img src="cocoon6.jpg" alt="Cocoon Image 6" />
+      <img src="cocoon1.jpg" alt="Styling project Cocoon 1" />
+      <img src="cocoon2.jpg" alt="Styling project Cocoon 2" />
+      <img src="cocoon3.jpg" alt="Styling project Cocoon 3" />
+      <img src="cocoon4.jpg" alt="Styling project Cocoon 4" />
+      <img src="cocoon5.jpg" alt="Styling project Cocoon 5" />
+      <img src="cocoon6.jpg" alt="Styling project Cocoon 6" />
     </div>
 
     <h3>Architecture</h3>
     <p><strong>Architecture</strong> My architectural background enhances my fashion work through structured thinking and creative composition, bridging technical design with artistic intuition.</p>
     <div class="portfolio">
-      <img src="architecture1.jpg" alt="Architecture Image 1" />
-      <img src="architecture2.jpg" alt="Architecture Image 2" />
-      <img src="architecture3.jpg" alt="Architecture Image 3" />
-      <img src="architecture4.jpg" alt="Architecture Image 4" />
-      <img src="architecture5.jpg" alt="Architecture Image 5" />
-      <img src="architecture6.jpg" alt="Architecture Image 6" />
+      <img src="architecture1.jpg" alt="Architecture project 1" />
+      <img src="architecture2.jpg" alt="Architecture project 2" />
+      <img src="architecture3.jpg" alt="Architecture project 3" />
+      <img src="architecture4.jpg" alt="Architecture project 4" />
+      <img src="architecture5.jpg" alt="Architecture project 5" />
+      <img src="architecture6.jpg" alt="Architecture project 6" />
     </div>
   </section>
 
@@ -137,10 +165,10 @@
     <p>Instagram: <a href="https://instagram.com/samirafth_" target="_blank">@samirafth_</a></p>
 
     <form action="mailto:samirafathimourjani@gmail.com" method="POST" enctype="text/plain">
-      <label>Your Name:</label><br />
-      <input type="text" name="name" /><br />
-      <label>Your Message:</label><br />
-      <textarea name="message"></textarea><br />
+      <label for="name">Your Name:</label><br />
+      <input type="text" id="name" name="name" required placeholder="Your name" /><br />
+      <label for="message">Your Message:</label><br />
+      <textarea id="message" name="message" required placeholder="Your message"></textarea><br />
       <input type="submit" value="Send" />
     </form>
   </section>
