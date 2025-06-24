@@ -131,7 +131,6 @@
       border-radius: 0 3px 3px 0;
       background-color: rgba(0,0,0,0.5);
       user-select: none;
-      z-index: 10;
     }
 
     .next {
@@ -177,20 +176,16 @@
       <div class="mySlides"><img src="rebirth7.jpg" alt="Rebirth 6"></div>
       <div class="mySlides"><img src="rebirth8.jpg" alt="Rebirth 7"></div>
       <div class="mySlides"><img src="rebirth9.jpg" alt="Rebirth 8"></div>
-      <a class="prev">&#10094;</a>
-      <a class="next">&#10095;</a>
     </div>
 
     <h4>Roaming in Chinatown</h4>
-    <p><strong>Roaming in Chinatown</strong></p>
+    <p><strong>Roaming in Chinatown</strong> 
     <div class="slideshow-container">
       <div class="mySlides"><img src="chinatown1.jpg" alt="Roaming in Chinatown 1"></div>
       <div class="mySlides"><img src="chinatown2.jpg" alt="Roaming in Chinatown 2"></div>
       <div class="mySlides"><img src="chinatown3.jpg" alt="Roaming in Chinatown 3"></div>
       <div class="mySlides"><img src="chinatown4.jpg" alt="Roaming in Chinatown 4"></div>
       <div class="mySlides"><img src="chinatown5.jpg" alt="Roaming in Chinatown 5"></div>
-      <a class="prev">&#10094;</a>
-      <a class="next">&#10095;</a>
     </div>
 
     <h4>Cocoon</h4>
@@ -202,8 +197,6 @@
       <div class="mySlides"><img src="cocoon4.jpg" alt="Cocoon 4"></div>
       <div class="mySlides"><img src="cocoon5.jpg" alt="Cocoon 5"></div>
       <div class="mySlides"><img src="cocoon6.jpg" alt="Cocoon 6"></div>
-      <a class="prev">&#10094;</a>
-      <a class="next">&#10095;</a>
     </div>
 
     <h3>Architecture</h3>
@@ -215,8 +208,6 @@
       <div class="mySlides"><img src="architecture4.jpg" alt="Architecture 4"></div>
       <div class="mySlides"><img src="architecture5.jpg" alt="Architecture 5"></div>
       <div class="mySlides"><img src="architecture6.jpg" alt="Architecture 6"></div>
-      <a class="prev">&#10094;</a>
-      <a class="next">&#10095;</a>
     </div>
   </section>
 
@@ -239,11 +230,20 @@
   </footer>
 
   <script>
-    document.querySelectorAll('.slideshow-container').forEach(container => {
-      let slideIndex = 0;
-      const slides = container.querySelectorAll('.mySlides');
-      const prevBtn = container.querySelector('.prev');
-      const nextBtn = container.querySelector('.next');
+    let slideIndex = 0;
+    const allSlides = document.querySelectorAll('.slideshow-container');
 
-      function showSlide(index) {
-        if (index >= slides.length) slideIndex
+    function showSlides() {
+      allSlides.forEach(container => {
+        const slides = container.querySelectorAll(".mySlides");
+        slides.forEach(slide => slide.style.display = "none");
+        container.slideIndex = container.slideIndex || 0;
+        container.slideIndex++;
+        if (container.slideIndex > slides.length) { container.slideIndex = 1; }
+        slides[container.slideIndex - 1].style.display = "block";
+      });
+      setTimeout(showSlides, 3000);
+    }
+    showSlides();
+  </script>
+</body>
