@@ -1,0 +1,253 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samira Fathi</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      position: relative;
+      background: url('IMAGE1.jpg') center/cover no-repeat;
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+
+    header h1,
+    header p {
+      position: relative;
+      z-index: 1;
+    }
+
+    nav {
+      text-align: center;
+      margin: 1rem 0;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff3366;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h1, h2, h3 {
+      font-weight: normal;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    .portfolio img {
+      width: 100%;
+      max-width: 600px;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #f4f4f4;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 16px;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+
+    /* Slideshow Styles */
+    .slideshow-container {
+      position: relative;
+      max-width: 600px;
+      margin: 2rem auto;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .mySlides img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 1rem;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 24px;
+      transition: 0.3s;
+      border-radius: 0 3px 3px 0;
+      background-color: rgba(0,0,0,0.5);
+      user-select: none;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Samira Fathi</h1>
+    <p><em>Stylist & Image Consultant based in Milan</em></p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Turning from Architecture to Fashion, I've immersed myself in this universe in search of where I truly belong, and now I'm chasing the wonders of styling.</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+
+    <h3>Styling</h3>
+
+    <h4>Rebirth</h4>
+    <p><strong>Rebirth</strong> Inspired by the myth of INANNA, this project reflects a journey of death, transformation, and renewal, symbolically staged in a cemetery.</p>
+    <div class="portfolio">
+      <img src="rebirth2.jpg" alt="Styling project Rebirth 1" />
+      <img src="rebirth3.jpg" alt="Styling project Rebirth 2" />
+      <img src="rebirth4.jpg" alt="Styling project Rebirth 3" />
+      <img src="rebirth5.jpg" alt="Styling project Rebirth 4" />
+      <img src="rebirth6.jpg" alt="Styling project Rebirth 5" />
+      <img src="rebirth7.jpg" alt="Styling project Rebirth 6" />
+      <img src="rebirth8.jpg" alt="Styling project Rebirth 7" />
+      <img src="rebirth9.jpg" alt="Styling project Rebirth 8" />
+    </div>
+
+    <h4>Roaming in Chinatown</h4>
+    <p>Styled by me.</p>
+    <div class="slideshow-container">
+      <div class="mySlides"><img src="chinatown1.jpg" alt="Roaming in Chinatown 1"></div>
+      <div class="mySlides"><img src="chinatown2.jpg" alt="Roaming in Chinatown 2"></div>
+      <div class="mySlides"><img src="chinatown3.jpg" alt="Roaming in Chinatown 3"></div>
+      <div class="mySlides"><img src="chinatown4.jpg" alt="Roaming in Chinatown 4"></div>
+      <div class="mySlides"><img src="chinatown5.jpg" alt="Roaming in Chinatown 5"></div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <h4>Cocoon</h4>
+    <p><strong>Cocoon</strong> A visual metaphor for inner growth and emotional resilience, illustrating the silent struggles and eventual transformation we all go through.</p>
+    <div class="portfolio">
+      <img src="cocoon1.jpg" alt="Styling project Cocoon 1" />
+      <img src="cocoon2.jpg" alt="Styling project Cocoon 2" />
+      <img src="cocoon3.jpg" alt="Styling project Cocoon 3" />
+      <img src="cocoon4.jpg" alt="Styling project Cocoon 4" />
+      <img src="cocoon5.jpg" alt="Styling project Cocoon 5" />
+      <img src="cocoon6.jpg" alt="Styling project Cocoon 6" />
+    </div>
+
+    <h3>Architecture</h3>
+    <p><strong>Architecture</strong> My architectural background enhances my fashion work through structured thinking and creative composition, bridging technical design with artistic intuition.</p>
+    <div class="portfolio">
+      <img src="architecture1.jpg" alt="Architecture project 1" />
+      <img src="architecture2.jpg" alt="Architecture project 2" />
+      <img src="architecture3.jpg" alt="Architecture project 3" />
+      <img src="architecture4.jpg" alt="Architecture project 4" />
+      <img src="architecture5.jpg" alt="Architecture project 5" />
+      <img src="architecture6.jpg" alt="Architecture project 6" />
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:samirafathimourjani@gmail.com">samirafathimourjani@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/samirafathi__" target="_blank">samirafathi__</a></p>
+
+    <form action="mailto:samirafathimourjani@gmail.com" method="POST" enctype="text/plain">
+      <label for="name">Your Name:</label><br />
+      <input type="text" id="name" name="name" required placeholder="Your name" /><br />
+      <label for="message">Your Message:</label><br />
+      <textarea id="message" name="message" required placeholder="Your message"></textarea><br />
+      <input type="submit" value="Send" />
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Samira Fth. All rights reserved.</p>
+  </footer>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      let slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+    }
+  </script>
+</body>
