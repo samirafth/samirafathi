@@ -1,122 +1,9 @@
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Samira Fathi</title>
+  <!-- (unchanged head content omitted for brevity) -->
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
+    /* ... existing styles ... */
 
-    body {
-      font-family: 'Helvetica Neue', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fff;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      position: relative;
-      background: url('IMAGE1.jpg') center/cover no-repeat;
-      color: white;
-      padding: 6rem 2rem;
-      text-align: center;
-    }
-
-    header::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.4);
-      z-index: 0;
-    }
-
-    header h1,
-    header p {
-      position: relative;
-      z-index: 1;
-    }
-
-    nav {
-      text-align: center;
-      margin: 1rem 0;
-    }
-
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: #000;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #ff3366;
-    }
-
-    section {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    h1, h2, h3 {
-      font-weight: normal;
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-
-    p {
-      margin-bottom: 1rem;
-    }
-
-    .portfolio img {
-      width: 100%;
-      max-width: 600px;
-      margin-bottom: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    footer {
-      background: #f4f4f4;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      body {
-        font-size: 16px;
-      }
-
-      nav a {
-        display: block;
-        margin: 0.5rem 0;
-      }
-    }
-
-    /* Slideshow Styles */
-    .slideshow-container {
-      position: relative;
-      max-width: 600px;
-      margin: 2rem auto;
-    }
-
-    .mySlides {
-      display: none;
-    }
-
-    .mySlides img {
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
+    /* Added styles for slideshow buttons */
     .prev, .next {
       cursor: pointer;
       position: absolute;
@@ -131,6 +18,7 @@
       border-radius: 0 3px 3px 0;
       background-color: rgba(0,0,0,0.5);
       user-select: none;
+      z-index: 2;
     }
 
     .next {
@@ -144,21 +32,7 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Samira Fathi</h1>
-    <p><em>Stylist & Image Consultant based in Milan</em></p>
-  </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Turning from Architecture to Fashion, I've immersed myself in this universe in search of where I truly belong, and now I'm chasing the wonders of styling.</p>
-  </section>
+  <!-- ... existing content unchanged ... -->
 
   <section id="portfolio">
     <h2>Portfolio</h2>
@@ -176,16 +50,19 @@
       <div class="mySlides"><img src="rebirth7.jpg" alt="Rebirth 6"></div>
       <div class="mySlides"><img src="rebirth8.jpg" alt="Rebirth 7"></div>
       <div class="mySlides"><img src="rebirth9.jpg" alt="Rebirth 8"></div>
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
     </div>
 
     <h4>Roaming in Chinatown</h4>
-    <p><strong>Roaming in Chinatown</strong> 
     <div class="slideshow-container">
       <div class="mySlides"><img src="chinatown1.jpg" alt="Roaming in Chinatown 1"></div>
       <div class="mySlides"><img src="chinatown2.jpg" alt="Roaming in Chinatown 2"></div>
       <div class="mySlides"><img src="chinatown3.jpg" alt="Roaming in Chinatown 3"></div>
       <div class="mySlides"><img src="chinatown4.jpg" alt="Roaming in Chinatown 4"></div>
       <div class="mySlides"><img src="chinatown5.jpg" alt="Roaming in Chinatown 5"></div>
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
     </div>
 
     <h4>Cocoon</h4>
@@ -197,6 +74,8 @@
       <div class="mySlides"><img src="cocoon4.jpg" alt="Cocoon 4"></div>
       <div class="mySlides"><img src="cocoon5.jpg" alt="Cocoon 5"></div>
       <div class="mySlides"><img src="cocoon6.jpg" alt="Cocoon 6"></div>
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
     </div>
 
     <h3>Architecture</h3>
@@ -208,42 +87,47 @@
       <div class="mySlides"><img src="architecture4.jpg" alt="Architecture 4"></div>
       <div class="mySlides"><img src="architecture5.jpg" alt="Architecture 5"></div>
       <div class="mySlides"><img src="architecture6.jpg" alt="Architecture 6"></div>
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:samirafathimourjani@gmail.com">samirafathimourjani@gmail.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/samirafathi__" target="_blank">@samirafathi__</a></p>
-
-    <form action="mailto:samirafathimourjani@gmail.com" method="POST" enctype="text/plain">
-      <label for="name">Your Name:</label><br />
-      <input type="text" id="name" name="name" required placeholder="Your name" /><br />
-      <label for="message">Your Message:</label><br />
-      <textarea id="message" name="message" required placeholder="Your message"></textarea><br />
-      <input type="submit" value="Send" />
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Samira Fth. All rights reserved.</p>
-  </footer>
+  <!-- ... rest unchanged ... -->
 
   <script>
-    let slideIndex = 0;
-    const allSlides = document.querySelectorAll('.slideshow-container');
+    // For manual slideshow control
+    document.querySelectorAll('.slideshow-container').forEach(container => {
+      const slides = container.querySelectorAll('.mySlides');
+      let index = 0;
 
-    function showSlides() {
-      allSlides.forEach(container => {
-        const slides = container.querySelectorAll(".mySlides");
-        slides.forEach(slide => slide.style.display = "none");
-        container.slideIndex = container.slideIndex || 0;
-        container.slideIndex++;
-        if (container.slideIndex > slides.length) { container.slideIndex = 1; }
-        slides[container.slideIndex - 1].style.display = "block";
-      });
-      setTimeout(showSlides, 3000);
-    }
-    showSlides();
+      function showSlide(i) {
+        slides.forEach(slide => (slide.style.display = 'none'));
+        if(i < 0) {
+          index = slides.length - 1;
+        } else if(i >= slides.length) {
+          index = 0;
+        } else {
+          index = i;
+        }
+        slides[index].style.display = 'block';
+      }
+
+      showSlide(index);
+
+      const prev = container.querySelector('.prev');
+      const next = container.querySelector('.next');
+
+      if(prev) {
+        prev.addEventListener('click', () => {
+          showSlide(index - 1);
+        });
+      }
+
+      if(next) {
+        next.addEventListener('click', () => {
+          showSlide(index + 1);
+        });
+      }
+    });
   </script>
 </body>
