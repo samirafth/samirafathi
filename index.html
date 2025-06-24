@@ -142,29 +142,6 @@
     .prev:hover, .next:hover {
       background-color: rgba(0,0,0,0.8);
     }
-
-    /* Portfolio header style for Styling / Architecture toggles */
-    .portfolio-toggle {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin-bottom: 1rem;
-      user-select: none;
-      cursor: pointer;
-    }
-
-    .portfolio-toggle span {
-      font-size: 1.5rem;
-      font-weight: normal;
-      color: #555;
-      transition: all 0.3s ease;
-    }
-
-    .portfolio-toggle .active {
-      font-weight: 700;
-      font-size: 2rem;
-      color: #000;
-    }
   </style>
 </head>
 <body>
@@ -187,125 +164,86 @@
   <section id="portfolio">
     <h2>Portfolio</h2>
 
-    <div class="portfolio-toggle">
-      <span id="stylingToggle" class="active">Styling</span>
-      <span id="architectureToggle">Architecture</span>
+    <h3>Styling</h3>
+
+    <h4>Rebirth</h4>
+    <p><strong>Rebirth</strong> Inspired by the myth of INANNA, this project reflects a journey of death, transformation, and renewal, symbolically staged in a cemetery.</p>
+    <div class="slideshow-container">
+      <div class="mySlides"><img src="rebirth2.jpg" alt="Rebirth 1"></div>
+      <div class="mySlides"><img src="rebirth3.jpg" alt="Rebirth 2"></div>
+      <div class="mySlides"><img src="rebirth4.jpg" alt="Rebirth 3"></div>
+      <div class="mySlides"><img src="rebirth5.jpg" alt="Rebirth 4"></div>
+      <div class="mySlides"><img src="rebirth6.jpg" alt="Rebirth 5"></div>
+      <div class="mySlides"><img src="rebirth7.jpg" alt="Rebirth 6"></div>
+      <div class="mySlides"><img src="rebirth8.jpg" alt="Rebirth 7"></div>
+      <div class="mySlides"><img src="rebirth9.jpg" alt="Rebirth 8"></div>
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
     </div>
 
-    <div id="stylingProjects">
-      <h3>Styling Projects</h3>
-
-      <h4>Rebirth</h4>
-      <p>Inspired by the myth of INANNA, this project reflects a journey of death, transformation, and renewal, symbolically staged in a cemetery.</p>
-      <div class="slideshow-container" data-project="rebirth">
-        <div class="mySlides"><img src="rebirth2.jpg" alt="Rebirth 1"></div>
-        <div class="mySlides"><img src="rebirth3.jpg" alt="Rebirth 2"></div>
-        <div class="mySlides"><img src="rebirth4.jpg" alt="Rebirth 3"></div>
-        <div class="mySlides"><img src="rebirth5.jpg" alt="Rebirth 4"></div>
-        <div class="mySlides"><img src="rebirth6.jpg" alt="Rebirth 5"></div>
-        <div class="mySlides"><img src="rebirth7.jpg" alt="Rebirth 6"></div>
-        <div class="mySlides"><img src="rebirth8.jpg" alt="Rebirth 7"></div>
-        <div class="mySlides"><img src="rebirth9.jpg" alt="Rebirth 8"></div>
-        <a class="prev">&#10094;</a>
-        <a class="next">&#10095;</a>
-      </div>
-
-      <h4>Roaming in Chinatown</h4>
-      <div class="slideshow-container" data-project="chinatown">
-        <div class="mySlides"><img src="chinatown1.jpg" alt="Roaming in Chinatown 1"></div>
-        <div class="mySlides"><img src="chinatown2.jpg" alt="Roaming in Chinatown 2"></div>
-        <div class="mySlides"><img src="chinatown3.jpg" alt="Roaming in Chinatown 3"></div>
-        <div class="mySlides"><img src="chinatown4.jpg" alt="Roaming in Chinatown 4"></div>
-        <div class="mySlides"><img src="chinatown5.jpg" alt="Roaming in Chinatown 5"></div>
-        <a class="prev">&#10094;</a>
-        <a class="next">&#10095;</a>
-      </div>
-
-      <h4>Cocoon</h4>
-      <p>A visual metaphor for inner growth and emotional resilience, illustrating the silent struggles and eventual transformation we all go through.</p>
-      <div class="slideshow-container" data-project="cocoon">
-        <div class="mySlides"><img src="cocoon1.jpg" alt="Cocoon 1"></div>
-        <div class="mySlides"><img src="cocoon2.jpg" alt="Cocoon 2"></div>
-        <div class="mySlides"><img src="cocoon3.jpg" alt="Cocoon 3"></div>
-        <div class="mySlides"><img src="cocoon4.jpg" alt="Cocoon 4"></div>
-        <div class="mySlides"><img src="cocoon5.jpg" alt="Cocoon 5"></div>
-        <div class="mySlides"><img src="cocoon6.jpg" alt="Cocoon 6"></div>
-        <a class="prev">&#10094;</a>
-        <a class="next">&#10095;</a>
-      </div>
+    <h4>Roaming in Chinatown</h4>
+    <p><strong>Roaming in Chinatown</strong></p>
+    <div class="slideshow-container">
+      <div class="mySlides"><img src="chinatown1.jpg" alt="Roaming in Chinatown 1"></div>
+      <div class="mySlides"><img src="chinatown2.jpg" alt="Roaming in Chinatown 2"></div>
+      <div class="mySlides"><img src="chinatown3.jpg" alt="Roaming in Chinatown 3"></div>
+      <div class="mySlides"><img src="chinatown4.jpg" alt="Roaming in Chinatown 4"></div>
+      <div class="mySlides"><img src="chinatown5.jpg" alt="Roaming in Chinatown 5"></div>
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
     </div>
 
-    <div id="architectureProjects" style="display:none;">
-      <h3>Architecture Projects</h3>
+    <h4>Cocoon</h4>
+    <p><strong>Cocoon</strong> A visual metaphor for inner growth and emotional resilience, illustrating the silent struggles and eventual transformation we all go through.</p>
+    <div class="slideshow-container">
+      <div class="mySlides"><img src="cocoon1.jpg" alt="Cocoon 1"></div>
+      <div class="mySlides"><img src="cocoon2.jpg" alt="Cocoon 2"></div>
+      <div class="mySlides"><img src="cocoon3.jpg" alt="Cocoon 3"></div>
+      <div class="mySlides"><img src="cocoon4.jpg" alt="Cocoon 4"></div>
+      <div class="mySlides"><img src="cocoon5.jpg" alt="Cocoon 5"></div>
+      <div class="mySlides"><img src="cocoon6.jpg" alt="Cocoon 6"></div>
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+    </div>
 
-      <p>My architectural background informs my styling approach, emphasizing structure, form, and space.</p>
-
-      <h4>Project A</h4>
-      <p>An exploration of spatial dynamics in modern urban architecture focusing on light and shadow.</p>
-
-      <h4>Project B</h4>
-      <p>A sustainable housing design project emphasizing eco-friendly materials and community living.</p>
+    <h3>Architecture</h3>
+    <p><strong>Architecture</strong> My architectural background enhances my fashion work through structured thinking and creative composition, bridging technical design with artistic intuition.</p>
+    <div class="slideshow-container">
+      <div class="mySlides"><img src="architecture1.jpg" alt="Architecture 1"></div>
+      <div class="mySlides"><img src="architecture2.jpg" alt="Architecture 2"></div>
+      <div class="mySlides"><img src="architecture3.jpg" alt="Architecture 3"></div>
+      <div class="mySlides"><img src="architecture4.jpg" alt="Architecture 4"></div>
+      <div class="mySlides"><img src="architecture5.jpg" alt="Architecture 5"></div>
+      <div class="mySlides"><img src="architecture6.jpg" alt="Architecture 6"></div>
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
     </div>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: sam.fth11@gmail.com</p>
-    <p>Instagram: <a href="https://www.instagram.com/samirafth_" target="_blank">@samirafth_</a></p>
+    <p>Email: <a href="mailto:samirafathimourjani@gmail.com">samirafathimourjani@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/samirafathi__" target="_blank">@samirafathi__</a></p>
+
+    <form action="mailto:samirafathimourjani@gmail.com" method="POST" enctype="text/plain">
+      <label for="name">Your Name:</label><br />
+      <input type="text" id="name" name="name" required placeholder="Your name" /><br />
+      <label for="message">Your Message:</label><br />
+      <textarea id="message" name="message" required placeholder="Your message"></textarea><br />
+      <input type="submit" value="Send" />
+    </form>
   </section>
 
   <footer>
-    &copy; 2025 Samira Fathi. All rights reserved.
+    <p>&copy; 2025 Samira Fth. All rights reserved.</p>
   </footer>
 
   <script>
-    // Slideshow manual controls, no auto
-    document.querySelectorAll('.slideshow-container').forEach((container) => {
+    document.querySelectorAll('.slideshow-container').forEach(container => {
       let slideIndex = 0;
       const slides = container.querySelectorAll('.mySlides');
       const prevBtn = container.querySelector('.prev');
       const nextBtn = container.querySelector('.next');
 
-      function showSlide(n) {
-        if (n >= slides.length) slideIndex = 0;
-        else if (n < 0) slideIndex = slides.length - 1;
-        else slideIndex = n;
-
-        slides.forEach((slide, i) => {
-          slide.style.display = i === slideIndex ? 'block' : 'none';
-        });
-      }
-
-      prevBtn.addEventListener('click', () => {
-        showSlide(slideIndex - 1);
-      });
-
-      nextBtn.addEventListener('click', () => {
-        showSlide(slideIndex + 1);
-      });
-
-      // Initialize first slide visible
-      showSlide(slideIndex);
-    });
-
-    // Portfolio toggle for styling / architecture
-    const stylingToggle = document.getElementById('stylingToggle');
-    const architectureToggle = document.getElementById('architectureToggle');
-    const stylingProjects = document.getElementById('stylingProjects');
-    const architectureProjects = document.getElementById('architectureProjects');
-
-    stylingToggle.addEventListener('click', () => {
-      stylingProjects.style.display = 'block';
-      architectureProjects.style.display = 'none';
-      stylingToggle.classList.add('active');
-      architectureToggle.classList.remove('active');
-    });
-
-    architectureToggle.addEventListener('click', () => {
-      stylingProjects.style.display = 'none';
-      architectureProjects.style.display = 'block';
-      stylingToggle.classList.remove('active');
-      architectureToggle.classList.add('active');
-    });
-  </script>
-</body>
+      function showSlide(index) {
+        if (index >= slides.length) slideIndex
