@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me — Samira Fathi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fff;
+      color: #111;
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      padding: 40px 20px;
+      border-right: 1px solid #eee;
+      position: fixed;
+      height: 100vh;
+      background: #fff;
+    }
+
+    .sidebar a {
+      display: block;
+      margin-bottom: 18px;
+      text-decoration: none;
+      font-size: 14px;
+      color: #111;
+    }
+
+    .sidebar a:hover {
+      opacity: 0.6;
+    }
+
+    /* Main */
+    .main {
+      margin-left: 220px;
+      width: calc(100% - 220px);
+      padding: 80px 60px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .about-text {
+      max-width: 650px;
+      font-size: 15px;
+      line-height: 1.9;
+      font-weight: 300;
+      margin-bottom: 60px;
+    }
+
+    .about-text p {
+      margin-bottom: 20px;
+    }
+
+    .profile {
+      max-width: 420px;
+    }
+
+    .profile img {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .cv-link {
+      font-size: 14px;
+      text-decoration: none;
+      color: #111;
+      border-bottom: 1px solid #111;
+      padding-bottom: 2px;
+    }
+
+    .cv-link:hover {
+      opacity: 0.6;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      .sidebar {
+        display: none;
+      }
+
+      .main {
+        margin-left: 0;
+        width: 100%;
+        padding: 60px 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="index.html#styling">Styling & Art Direction</a>
+    <a href="index.html#assistant">Styling Assistant</a>
+    <a href="index.html#architecture">Architecture</a>
+    <a href="index.html#contact">Contact</a>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+
+    <h1>About Me</h1>
+
+    <div class="about-text">
+
+      <p>
+        Unlike many who grew up dreaming of fashion, I never sewed clothes for my dolls, nor did I have a tailor in the family. Fashion was not an obvious destination for me. What I always felt, however, was a strong need to create and to build, an intuition that led me to architecture. Studying architecture trained me to think structurally while remaining creative.
+      </p>
+
+      <p>
+        By the end of that path, I felt the need for a different kind of expression , something I could no longer fully find within architecture. This, together with my hunger to always learn more and see more of the world, led me to Italy, where I pursued an MA in Fashion Studies. The course allowed me to explore fashion from multiple perspectives, from history and archives to marketing and visual culture, giving me a broad understanding of the industry rather than focusing on one single role.
+      </p>
+
+      <p>
+        During my observation of the fashion industry, I became increasingly drawn to the ambiguity of styling , a space between creativity, research, and visual interpretation. This curiosity led me to dedicate my MA thesis to styling, titled <em>The Bastard Art: Styling as Authorship and Cultural Labor</em>.
+      </p>
+
+      <p>
+        To deepen this interest, I completed a short styling course at UAL and began translating theory into practice by working on creative projects with upcoming talents as a stylist and art director, while also assisting stylists on commercial and editorial productions , experiences I consider a real masterclass.
+      </p>
+
+      <p>
+        Having lived and worked across different countries has shaped the way I see the world, allowing me to think beyond fixed frameworks and embrace multiple perspectives. As a quick learner, I am constantly looking for new ways to grow, and today I develop my voice through styling, storytelling, visual research, and image-making.
+      </p>
+
+      <p>
+        I am ready to bring my experiences into practice and continue deepening my voice through styling, assisting, creative direction, content creation, and image consulting.
+      </p>
+
+    </div>
+
+    <div class="profile">
+      <img src="images/about/profile.jpg" alt="Samira Fathi">
+
+      <a class="cv-link" href="files/Samira-Fathi-CV.pdf" target="_blank">
+        Download CV
+      </a>
+    </div>
+
+  </main>
+
+</body>
+</html>
